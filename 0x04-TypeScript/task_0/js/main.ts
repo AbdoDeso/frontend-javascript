@@ -30,8 +30,5 @@ studentslist.forEach(student => {
 
 });
 
-let TargetID = document.getElementById("TableDiv")
 
-if(TargetID) {
-    TargetID.appendChild(table);
-}
+document.body.appendChild(table)
