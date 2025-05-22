@@ -1,13 +1,9 @@
 namespace Subjects {
-  
-export class Subject  implements Teacher{
-    firstname: string
+export class Subject {
+    teacher: Teacher
 
-    public teacherName: Teacher
-    
- setTeacher(teacher:Teacher) {
-   return teacher.firstname = "Ahmed"
+    setTeacher(teacher: Teacher) {
+        this.teacher = teacher;
+    }
 }
-}
-
 }

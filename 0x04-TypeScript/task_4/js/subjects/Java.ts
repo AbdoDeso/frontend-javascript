@@ -1,16 +1,14 @@
 namespace Subjects {
-    export interface Teacher {
-        experienceTeachingC?:number
-    }
-import { cTeacher } from "../main";
-    export class Java extends Subject{
+import { cTeacher } from "../main"
+
+    export class Java {
     
         getRequirements(){
             return "Here is the list of requirements for Java"
         }
         getAvailableTeacher(){
-            if (cTeacher>0) {
-            return ` Available Java Teacher: ${this.setTeacher}`
+            if (cTeacher.experienceTeachingC>0) {
+            return ` Available Java Teacher: ${cTeacher.firstName}`
             }else {
                 return "No available Java Teacher"
             }
