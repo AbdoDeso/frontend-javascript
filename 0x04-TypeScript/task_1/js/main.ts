@@ -1,7 +1,7 @@
 //build a Teacher interface
-interface Teacher {
-    firstname: string;
-    lastname: string;
+export interface Teacher {
+  readonly  firstname: string;
+   readonly lastname: string;
     fullTimeEmployee: boolean;
     yearsOfExperience?: number;
     location: string;
